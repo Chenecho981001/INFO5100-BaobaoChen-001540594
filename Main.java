@@ -53,12 +53,6 @@ public class Main {
         System.out.println(getBoxVolume(10,20,30)); //6000
         System.out.println(getBoxVolume(11,20,33)); //7260
 
-
-
-
-
-
-
     }
 
     //Question 1: Write a program find if String is Palindrome?
