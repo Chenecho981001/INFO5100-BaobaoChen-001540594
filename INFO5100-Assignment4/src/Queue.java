@@ -37,16 +37,13 @@ public class Queue<T> {
 
 
 //2. T remove()
-    public T remove(){
+    public void remove(){
         if (isEmpty()){
-            return null;
+            return;
         }
         Node oldFirst = head.next;
         head.next = oldFirst.next;
-        if (isEmpty()){
-            return null;
-        }
-        return oldFirst.item;
+        
     }
 
 
@@ -74,7 +71,7 @@ public class Queue<T> {
     private static  Queue  q;
     private static Object obj = new Object();
     private String QueueName = "";
-    public static Queue getInstance(){
+    private static Queue getInstance(){
 
         if(q == null){
             synchronized (obj){
